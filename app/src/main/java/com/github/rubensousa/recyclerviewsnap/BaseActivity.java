@@ -50,13 +50,13 @@ public class BaseActivity extends AppCompatActivity implements GravitySnapHelper
             snapAdapter.addSnap(new Snap(Gravity.END, "Snap end", apps));
             snapAdapter.addSnap(new Snap(Gravity.CENTER, "Pager snap", apps));
         } else {
-            snapAdapter.addSnap(new Snap(Gravity.CENTER_VERTICAL, "Snap center", apps));
+            snapAdapter.addSnap(new Snap(Gravity.CENTER_VERTICAL, "Snap center fwe ewf wef ewf ", apps));
             snapAdapter.addSnap(new Snap(Gravity.TOP, "Snap top", apps));
+            snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottomsdfsdf sdfsdfs dfsdfs dfsdfs dsfsdf sd", apps));
+            snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom sdf sdfs sdf sdf sfewr ewf ", apps));
             snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom", apps));
             snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom", apps));
-            snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom", apps));
-            snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom", apps));
-            snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom", apps));
+            snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottomwfs sf sd few wefse wef wef ", apps));
             snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom", apps));
             snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom", apps));
             snapAdapter.addSnap(new Snap(Gravity.BOTTOM, "Snap bottom", apps));
@@ -76,7 +76,7 @@ public class BaseActivity extends AppCompatActivity implements GravitySnapHelper
                 recyclerListView.getContext(), 48 == Gravity.CENTER_HORIZONTAL ?
                 LinearLayoutManager.HORIZONTAL : LinearLayoutManager.VERTICAL, false));
         recyclerListView.setOnFlingListener(null);
-        new LinearSnapHelper().attachToRecyclerView(recyclerListView);
+        new GravitySnapHelper(48).attachToRecyclerView(recyclerListView);
 
         recyclerListView.setAdapter(snapAdapter);
 
